@@ -20,8 +20,70 @@ a{
 
 nav{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   min-height: 8vh;
-  background-color: #fff;
+  padding: 2% 5%;
 }
+
+.logo{
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.logo img{
+  width: 200px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  align-items: center;
+  color: white;
+}
+
+
+
+.nav-links a{
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav-links button{
+  padding: 1.7% 3.2%;
+  border: none;
+  background-color: #b38e2e;
+  font-size: 17px;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* create a menu icon  */
+
+.menu-icon-parent{
+
+}
+
+.menu-line{
+  width: 45px;
+  height: 3px;
+  background-color: white;
+  margin: 3px;
+}
+
+.menu-icon-parent{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 5px;
+}
+
+
+
