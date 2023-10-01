@@ -8,7 +8,7 @@ body{
   font-family: Mulish, sans-serif;
   overflow-x: hidden;
   font-family: "Nunito Sans", "Playfair Display", sans-serif;
-  background-color: antiquewhite;
+  background-color: white;
 }
 
 a{
@@ -23,7 +23,7 @@ nav{
   justify-content: space-between;
   align-items: center;
   min-height: 8vh;
-  padding: 2% 5%;
+  padding: 1% 5%;
 }
 
 .logo{
@@ -51,9 +51,36 @@ nav{
 .nav-links a{
   color: white;
   text-decoration: none;
-  letter-spacing: 3px;
-  font-weight: bold;
+  letter-spacing: 2px;
+  font-weight: normal;
   font-size: 18px;
+  line-height: 1.2em;
+  padding: 2% 0;
+}
+
+
+.destinations, .packages{
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:right;
+  cursor: pointer;
+  position: relative;
+}
+
+.destinations a, .packages a{
+  padding: 12% 0;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.2em;
+}
+
+
+
+.destinations, .packages i{
+  font-size: 0.8em;
 }
 
 .nav-links button{
@@ -63,16 +90,21 @@ nav{
   font-size: 17px;
   color: white;
   text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.nav-links button:hover{
+  background-color: rgb(46, 45, 45);
+  transform: translateY(-6px);
+  transition: all 0.5s ease;
 }
 
 /* create a menu icon  */
 
-.menu-icon-parent{
-
-}
 
 .menu-line{
-  width: 45px;
+  width: 35px;
   height: 3px;
   background-color: white;
   margin: 3px;
@@ -87,3 +119,702 @@ nav{
 
 
 
+
+.dropdown-list2{
+  display: none;
+  position: absolute;  
+  background-color: #454545;
+  padding: 20px;
+  z-index: 1;
+  left: -135%;
+  top: 190%;
+  
+  flex-direction: column;
+}
+
+.dropdown-list2-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  
+  z-index: 1;
+  gap: 15px;
+  height: 73vh;
+  width: 30vw;
+}
+
+.packages-heading h1{
+  position: relative;
+}
+
+
+
+.packages-heading::after{
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 1px;
+  width: 48%;
+  left: 52%;
+  top:50%;
+}
+
+.packages-heading{
+  position: relative;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 1.5% 0 5% 0;
+}
+
+.dropdown-list2 div div{
+  padding: 10%;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+  background-position: center;
+}
+
+.dropdown-list2-grid h1{
+  font-size: 1.2em;
+}
+
+.dropdown-list2 div div:nth-child(1):hover{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/dropdown-list-2/A\ Classic\ Kenya\ Safari\ is\ the\ Ultimate\ Family\ Vacation\ _\ Virtuoso.jpg);
+  background-size: cover;
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+  border: none;
+}
+
+.dropdown-list2 div div:nth-child(2):hover{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/dropdown-list-2/Zanzibar\ Tanzania\ 🇹🇿.jpg);
+  background-size: cover;
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+  border: none;
+}
+
+.dropdown-list2 div div:nth-child(3):hover{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/dropdown-list-2/26\ Beautiful\ Places\ to\ Visit\ in\ Uganda_\ Nature\,\ Culture\,\ Wildlife.jpg);
+  background-size: cover;
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+  border: none;
+
+}
+
+.dropdown-list2 div div:nth-child(4):hover{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/dropdown-list-2/Why\ Visit\ Volcanoes\ National\ Park\ In\ Rwanda\ _\ Drink\ Tea\ &\ Travel.jpg);
+  background-size: cover;
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+  border: none;
+}
+
+.dropdown-list2 div div:nth-child(5):hover{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/dropdown-list-2/20\ Photos\ to\ Inspire\ You\ to\ Visit\ Botswana\ •\ The\ Blonde\ Abroad.jpg);
+  background-size: cover;
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+  border: none;
+}
+
+.dropdown-list2 div div:nth-child(6):hover{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/dropdown-list-2/6\ Reasons\ to\ Put\ Zambia\ on\ Your\ Next\ African\ Itinerary.jpg);
+  background-size: cover;
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+  border: none;
+}
+
+.dropdown-list2 div div:nth-child(7):hover{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/dropdown-list-2/Matobo\ National\ Park.jpg);
+  background-size: cover;
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+  border: none;
+
+}
+
+.dropdown-list2 div div:nth-child(8):hover{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/dropdown-list-2/Capetown\ sa.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+  border: none;
+}
+
+.package{
+  background-color: transparent;
+}
+
+.package h1{
+  font-size: 1.2em;
+}
+
+.package p{
+  font-size: 0.7em;
+  color: #dedede;
+}
+
+/* create the exact same css of dropdown-list2 for dropdown-list1 */
+
+.dropdown-list1{
+  display: none;
+  position: absolute;  
+  background-color: #454545;
+  padding: 20px;
+  z-index: 1;
+  left: -135%;
+  top: 190%;
+  flex-direction: column;
+}
+
+.dropdown-list1-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+  
+  z-index: 1;
+  gap: 15px;
+  height: 73vh;
+  width: 40vw;
+}
+
+.packages-heading h1{
+  position: relative;
+}
+
+
+
+.packages-heading::after{
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 1px;
+  width: 48%;
+  left: 52%;
+  top:50%;
+}
+
+.packages-heading{
+  position: relative;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 2% 0 5% 0;
+}
+
+.dropdown-list1 div div{
+  padding: 10%;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+  background-position: center;
+}
+
+.dropdown-list1-grid h1{
+  font-size: 1.2em;
+}
+
+.dropdown-list1 div div:nth-child(1):hover{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/dropdown-list-2/A\ Classic\ Kenya\ Safari\ is\ the\ Ultimate\ Family\ Vacation\ _\ Virtuoso.jpg);
+  background-size: cover;
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+  border: none;
+}
+
+.dropdown-list1 div div:nth-child(2):hover{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/dropdown-list-2/Zanzibar\ Tanzania\ 🇹🇿.jpg);
+  background-size: cover;
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+  border: none;
+}
+
+.dropdown-list1 div div:nth-child(3):hover{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/dropdown-list-2/26\ Beautiful\ Places\ to\ Visit\ in\ Uganda_\ Nature\,\ Culture\,\ Wildlife.jpg);
+  background-size: cover;
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+  border: none;
+
+}
+
+.dropdown-list1 div div:nth-child(4):hover{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/dropdown-list-2/Why\ Visit\ Volcanoes\ National\ Park\ In\ Rwanda\ _\ Drink\ Tea\ &\ Travel.jpg);
+  background-size: cover;
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+  border: none;
+}
+
+.dropdown-list1 div div:nth-child(5):hover{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/dropdown-list-2/20\ Photos\ to\ Inspire\ You\ to\ Visit\ Botswana\ •\ The\ Blonde\ Abroad.jpg);
+  background-size: cover;
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+  border: none;
+}
+
+.dropdown-list1 div div:nth-child(6):hover{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/dropdown-list-2/6\ Reasons\ to\ Put\ Zambia\ on\ Your\ Next\ African\ Itinerary.jpg);
+  background-size: cover;
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+  border: none;
+}
+
+.dropdown-list1 div div:nth-child(7):hover{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/dropdown-list-2/Matobo\ National\ Park.jpg);
+  background-size: cover;
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+  border: none;
+
+}
+
+.dropdown-list1 div div:nth-child(8):hover{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/dropdown-list-2/Capetown\ sa.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+  border: none;
+}
+
+.dropdown-list1 div div:nth-child(9):hover{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/dropdown-list-2/Wild\ Experiences_\ Luxury\ Travel\ -\ Andbeyond\ Sandibe\ Okavango\ Delta.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+  border: none;
+}
+.dropdown-list1 div div:nth-child(10):hover{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/dropdown-list-2/Beach\ Gambia.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+  border: none;
+}
+
+.dropdown-list1 div div:nth-child(11):hover{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/dropdown-list-2/20\ Must-Visit\ Tourist\ Sites\ in\ Ghana\ -\ The\ Best\ Things\ to\ Do\ in\ Ghana\ Visual\ Story.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+  border: none;
+}
+
+.dropdown-list1 div div:nth-child(12):hover{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/dropdown-list-2/Explore\ Mozambique\ Holidays\ And\ The\ Best\ Places\ To\ Visit\ -\ Dream\ Africa.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+  border: none;
+}
+
+.dropdown-list1 div div:nth-child(13):hover{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/dropdown-list-2/Africa\ -\ Luanda\,\ Angola.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+  border: none;
+}
+
+.dropdown-list1 div div:nth-child(14):hover{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/dropdown-list-2/Top\ 20\ Best\ Things\ To\ Do\ In\ Uganda.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+  border: none;
+}
+
+.dropdown-list1 div div:nth-child(15):hover{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/dropdown-list-2/The\ 20\ Best\ Things\ to\ do\ in\ Cape\ Town.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+  border: none;
+}
+
+
+
+
+
+
+.background-first-section{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/background1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: scaleX(-1);
+  position: absolute;
+  top: 0;
+  z-index: -5;
+}
+
+
+
+.first-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  text-align: start;
+  padding: 0 18%;
+  height: 90vh;
+  width: 60%;
+  position: relative;
+  z-index: 1;
+
+}
+
+.first-section h1{
+  font-size: 2.6em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  text-shadow: 8px 8px 10px rgba(0, 0, 0, 0.7);
+}
+
+.first-section button{
+  padding: 5% 8%;
+  border: none;
+  background-color: #b38e2e;
+  font-size: 17px;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.first-section button:hover{
+  background-color: rgb(46, 45, 45);
+  transform: translateY(-6px);
+  transition: all 0.5s ease;
+}
+
+.enter-details-page{
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 30%;
+  background-color: white;
+  z-index: 1;
+  padding: 4% 3% 3% 3%;
+  overflow-y: scroll;
+}
+
+.enter-details-page h1{
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  font-family: "Playfair Display", serif;
+  color: #454545;
+  font-weight: 500;
+}
+
+
+
+.enter-details-grid-item{
+  display: flex;
+  flex-direction: column;
+  padding: 3% 0;
+}
+
+.enter-details-grid-item input{
+  padding: 4%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 2% 0;
+}
+
+.enter-details-grid-item input:focus{
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.enter-details-grid-item input::placeholder{
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.enter-details-grid-item label{
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.enter-details-grid-item select{
+  padding: 4%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 2% 0;
+}
+
+.enter-details-grid-item select:focus{
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.enter-details-grid-item select::placeholder{
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.enter-details button{
+  padding: 4% 12%;
+  border: none;
+  background-color: #b38e2e;
+  font-size: 17px;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin: 4% 0;
+}
+
+.contact-our-email h1{
+  font-size: 1.3em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 40px 50px 10px 0;
+  font-family: "Playfair Display", serif;
+  color: #b38e2e;
+  font-weight: 500;
+  position: relative;
+}
+
+.contact-our-email h1::after{
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 1px;
+  width: 60%;
+  left: 52%;
+  top:50%;
+}
+
+.contact-our-email button{
+  padding: 6% 8%;
+  border: none;
+  background-color: #454545;
+  font-size: 17px;
+  color: white;
+  text-transform: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin: 2% 0;
+}
+
+.enter-details-page button:hover{
+  background-color: rgb(46, 45, 45);
+  transform: translateY(-6px);
+  transition: all 0.5s ease;
+}
+
+.enter-details-page textarea{
+  padding: 4%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 2% 0;
+  resize: none;
+}
+
+.enter-details-page textarea:focus{
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.fa-circle-xmark{
+  font-size: 3em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5%;
+  cursor: pointer;
+}
+
+.fa-circle-xmark:hover{
+  color: rgb(46, 45, 45);
+}
+
+.second-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-align: center;
+  padding: 0 18%;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.second-section h1{
+  font-size: 2.4em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  margin: 4% 0;
+  color: #454545;
+}
+
+.second-section button{
+  padding: 5% 8%;
+  border: none;
+  background-color: #b38e2e;
+  font-size: 17px;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.second-section button:hover{
+  background-color: rgb(46, 45, 45);
+  transform: translateY(-6px);
+  transition: all 0.5s ease;
+}
+
+.select-section-grid-item{
+  height: 60vh;
+}
+
+.second-section-grid-item h1{
+  font-family: "Nunito sans", sans-serif;
+}
+
+.second-section-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr; 
+  gap: 15px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  padding: 1% 0 2% 0;
+}
+
+.second-section-grid-item-images{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  position: relative;
+}
+
+
+
+.item1, .item2, .item3, .item4{
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.item1{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/dropdown-list-2/The\ 20\ Best\ Things\ to\ do\ in\ Cape\ Town.jpg
+  );
+}
+
+.item2{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/dropdown-list-2/Beach\ Gambia.jpg
+  );
+}
+
+.item3{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/dropdown-list-2/Wild\ Experiences_\ Luxury\ Travel\ -\ Andbeyond\ Sandibe\ Okavango\ Delta.jpg
+  );
+}
+
+.item4{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/dropdown-list-2/Destination\ Rwanda!.jpg
+  );
+}
+
+.second-section-grid-item-images h1{
+  font-size: 1em;
+  color: white;
+
+}
+
+.second-section-grid-item-images:nth-child(1){
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.second-section-grid-item-images:nth-child(2){
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.second-section-grid-item-images:nth-child(3){
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.second-section-grid-item-images:nth-child(4){
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.select-section p{
+  font-size: 0.8em !important;
+  color: #454545;
+  margin: 2% 0;
+}
