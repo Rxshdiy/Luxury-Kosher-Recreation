@@ -1,0 +1,4 @@
+_iub.csEnabled = true;
+_iub.csPurposes = [4,3,1,2,5,"sh","adv","s"];
+_iub.cpUpd = 1692946992;
+_iub.csT = 0.025;
