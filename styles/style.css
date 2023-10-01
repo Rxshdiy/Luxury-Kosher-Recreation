@@ -1,0 +1,27 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: Mulish, sans-serif;
+  overflow-x: hidden;
+  font-family: "Nunito Sans", "Playfair Display", sans-serif;
+  background-color: antiquewhite;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+/* nav bar */
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #fff;
+}
