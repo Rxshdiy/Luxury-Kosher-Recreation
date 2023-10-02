@@ -272,19 +272,20 @@ nav{
 
 /* create the exact same css of dropdown-list2 for dropdown-list1 */
 
-.active{
-  display: flex;
-}
+
 .dropdown-list1{
   display: none;
   position: absolute;  
   background-color: #454545;
   padding: 20px;
-  z-index: 1;
+  z-index: 5;
   left: -135%;
   top: 190%;
   flex-direction: column;
+
 }
+
+
 
 .dropdown-list1-grid{
   display: grid;
@@ -295,6 +296,7 @@ nav{
   gap: 15px;
   height: 73vh;
   width: 40vw;
+  transition: 1s all ease;
 }
 
 .packages-heading h1{
@@ -473,7 +475,9 @@ nav{
   border: none;
 }
 
-
+.active{
+  display: flex;
+}
 
 
 
