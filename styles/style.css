@@ -272,6 +272,9 @@ nav{
 
 /* create the exact same css of dropdown-list2 for dropdown-list1 */
 
+.active{
+  display: flex;
+}
 .dropdown-list1{
   display: none;
   position: absolute;  
@@ -934,59 +937,55 @@ nav{
 .bottom1{
   background-image: linear-gradient(rgba(0,0,0,.44),rgba(0,0,0,.44)),url(../assets/Capetown\ sa\ \(1\).jpg);
   background-position: center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-size: 100%;
 }
 
 .bottom2{
   background-image: linear-gradient(rgba(0,0,0,.44),rgba(0,0,0,.44)),url(../assets/dropdown-list-2/Beach\ Gambia.jpg);
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .bottom3{
   background-image: linear-gradient(rgba(0,0,0,.44),rgba(0,0,0,.44)),url(../assets/dropdown-list-2/Wild\ Experiences_\ Luxury\ Travel\ -\ Andbeyond\ Sandibe\ Okavango\ Delta.jpg);
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .bottom4{
   background-image: linear-gradient(rgba(0,0,0,.44),rgba(0,0,0,.44)),url(../assets/dropdown-list-2/Destination\ Rwanda!.jpg);
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .bottom5{
   background-image: linear-gradient(rgba(0,0,0,.44),rgba(0,0,0,.44)),url(../assets/dropdown-list-2/20\ Must-Visit\ Tourist\ Sites\ in\ Ghana\ -\ The\ Best\ Things\ to\ Do\ in\ Ghana\ Visual\ Story.jpg);
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .bottom6{
   background-image: linear-gradient(rgba(0,0,0,.44),rgba(0,0,0,.44)),url(../assets/dropdown-list-2/Explore\ Mozambique\ Holidays\ And\ The\ Best\ Places\ To\ Visit\ -\ Dream\ Africa.jpg);
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .bottom7{
   background-image: linear-gradient(rgba(0,0,0,.44),rgba(0,0,0,.44)),url(../assets/dropdown-list-2/Africa\ -\ Luanda\,\ Angola.jpg);
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .bottom8{
   background-image: linear-gradient(rgba(0,0,0,.44),rgba(0,0,0,.44)),url(../assets/dropdown-list-2/Top\ 20\ Best\ Things\ To\ Do\ In\ Uganda.jpg);
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .bottom9{
   background-image: linear-gradient(rgba(0,0,0,.44),rgba(0,0,0,.44)),url(../assets/Строительство\ частных\ домов\ от\ Studia\ 54.jpg);
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .bottom1, .bottom2, .bottom3, .bottom4, .bottom5, .bottom6, .bottom7, .bottom8, .bottom9{
@@ -999,7 +998,7 @@ nav{
   text-align: center;
   color: white;
   font-size: 1em;
-  transition: all 0.5s ease;
+  transition: all 2s ease;
 }
 
 .bottom1 h1, .bottom2 h1, .bottom3 h1, .bottom4 h1, .bottom5 h1, .bottom6 h1, .bottom7 h1, .bottom8 h1, .bottom9 h1{
@@ -1021,8 +1020,8 @@ nav{
 }
 
 .bottom1:hover, .bottom2:hover, .bottom3:hover, .bottom4:hover, .bottom5:hover, .bottom6:hover, .bottom7:hover, .bottom8:hover, .bottom9:hover{
-  background-size: 105%;
-  transition: all 0.5s ease-in;
+  background-size: 110%;
+  transition: all 2s ease-in;
   cursor: pointer;
 }
 
