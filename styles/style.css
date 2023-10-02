@@ -831,16 +831,23 @@ nav{
     padding-top: 100px;
     padding-bottom: 100px;
 
-    padding: 5% 19%;
+    padding: 5% 16%;
 } 
 
+.item1:hover, .item2:hover, .item3:hover, .item4:hover{
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
 .image-section-grid{
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 0.5fr 0.5fr;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .image-section h1{
-  font-size: 2em;
+  font-size: 1.7em;
   text-transform: uppercase;
   letter-spacing: 1px;
  
@@ -854,6 +861,7 @@ nav{
 .image-section img{
   width: 70px;
   height: 70px;
+  margin-bottom: 10px;
   object-fit: cover;
 }
 
@@ -861,7 +869,7 @@ nav{
   display: flex;
   flex-direction: column;
   background-color: white;
-  margin: 5% 0;
+  
   padding: 40px;
   grid-area: 1/ 1 / 2 / 3;
 }
@@ -872,5 +880,162 @@ nav{
   margin: 10px 0;
 }
 
+.image-section{
+  display: flex
+}
 
+.second-image-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 50px;
+}
 
+.second-image-section div{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  
+  padding: 40px;
+}
+
+.second-image-section img{
+  width: 60px;
+  height: 60px;
+}
+
+.packages-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 15px;
+  height: 150vh;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  padding: 5% 20%;
+}
+
+.packages-heading1 h1{
+  font-size: 2.5em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #454545;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+.packages-grid img{
+  width: 100px;
+  height: 250px;
+}
+
+.bottom1{
+  background-image: linear-gradient(rgba(0,0,0,.44),rgba(0,0,0,.44)),url(../assets/Capetown\ sa\ \(1\).jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom2{
+  background-image: linear-gradient(rgba(0,0,0,.44),rgba(0,0,0,.44)),url(../assets/dropdown-list-2/Beach\ Gambia.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.bottom3{
+  background-image: linear-gradient(rgba(0,0,0,.44),rgba(0,0,0,.44)),url(../assets/dropdown-list-2/Wild\ Experiences_\ Luxury\ Travel\ -\ Andbeyond\ Sandibe\ Okavango\ Delta.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.bottom4{
+  background-image: linear-gradient(rgba(0,0,0,.44),rgba(0,0,0,.44)),url(../assets/dropdown-list-2/Destination\ Rwanda!.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.bottom5{
+  background-image: linear-gradient(rgba(0,0,0,.44),rgba(0,0,0,.44)),url(../assets/dropdown-list-2/20\ Must-Visit\ Tourist\ Sites\ in\ Ghana\ -\ The\ Best\ Things\ to\ Do\ in\ Ghana\ Visual\ Story.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.bottom6{
+  background-image: linear-gradient(rgba(0,0,0,.44),rgba(0,0,0,.44)),url(../assets/dropdown-list-2/Explore\ Mozambique\ Holidays\ And\ The\ Best\ Places\ To\ Visit\ -\ Dream\ Africa.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.bottom7{
+  background-image: linear-gradient(rgba(0,0,0,.44),rgba(0,0,0,.44)),url(../assets/dropdown-list-2/Africa\ -\ Luanda\,\ Angola.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.bottom8{
+  background-image: linear-gradient(rgba(0,0,0,.44),rgba(0,0,0,.44)),url(../assets/dropdown-list-2/Top\ 20\ Best\ Things\ To\ Do\ In\ Uganda.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.bottom9{
+  background-image: linear-gradient(rgba(0,0,0,.44),rgba(0,0,0,.44)),url(../assets/Строительство\ частных\ домов\ от\ Studia\ 54.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.bottom1, .bottom2, .bottom3, .bottom4, .bottom5, .bottom6, .bottom7, .bottom8, .bottom9{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 5% 0;
+  text-align: center;
+  color: white;
+  font-size: 1em;
+  transition: all 0.5s ease;
+}
+
+.bottom1 h1, .bottom2 h1, .bottom3 h1, .bottom4 h1, .bottom5 h1, .bottom6 h1, .bottom7 h1, .bottom8 h1, .bottom9 h1{
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  margin: 0% 0% 4% 0;
+  color: white;
+  padding: 0 10%;
+}
+
+.bottom1 p, .bottom2 p, .bottom3 p, .bottom4 p, .bottom5 p, .bottom6 p, .bottom7 p, .bottom8 p, .bottom9 p{
+  font-size: 0.9em;
+  color: rgb(177, 177, 177);
+  text-align: center;
+  line-height: 1.6em;
+}
+
+.bottom1:hover, .bottom2:hover, .bottom3:hover, .bottom4:hover, .bottom5:hover, .bottom6:hover, .bottom7:hover, .bottom8:hover, .bottom9:hover{
+  background-size: 105%;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+}
+
+.bottom1:hover h1, .bottom2:hover h1, .bottom3:hover h1, .bottom4:hover h1, .bottom5:hover h1, .bottom6:hover h1, .bottom7:hover h1, .bottom8:hover h1, .bottom9:hover h1{
+  color: #b38e2e;
+  transition: all 0.5s ease;
+}
+
+.packages-heading1{
+  position: relative;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 4% 0 0 0;
+ 
+}
