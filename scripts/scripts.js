@@ -51,3 +51,24 @@ dropdownMenu2.addEventListener('mouseout', () => {
 }
 );
 
+const menuClick = document.querySelector('.menu-icon-parent');
+const menu = document.querySelector('.enter-details-page');
+const closeButton = document.querySelector('.fa-circle-xmark');
+
+function addActive3() {
+  menu.classList.add('clicked');
+}
+
+menuClick.addEventListener('click', () => {
+  addActive3();
+});
+
+closeButton.addEventListener('click', () => {
+  menu.classList.remove('clicked');
+}
+
+);
+
+
+
+

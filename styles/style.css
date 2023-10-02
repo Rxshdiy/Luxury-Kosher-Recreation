@@ -6,9 +6,10 @@
 
 body{
   font-family: Mulish, sans-serif;
-  overflow-x: hidden;
+  
   font-family: "Nunito Sans", "Playfair Display", sans-serif;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
+  
 }
 
 a{
@@ -543,7 +544,7 @@ nav{
 
 .enter-details-page{
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   flex-direction: column;
@@ -552,9 +553,9 @@ nav{
   height: 100vh;
   width: 30%;
   background-color: white;
-  z-index: 1;
+  z-index: 100;
   padding: 4% 3% 3% 3%;
-  overflow-y: scroll;
+  
 }
 
 .enter-details-page h1{
@@ -573,6 +574,11 @@ nav{
   display: flex;
   flex-direction: column;
   padding: 3% 0;
+  
+}
+
+.enter-details{
+  overflow: auto;
 }
 
 .enter-details-grid-item input{
@@ -694,6 +700,7 @@ nav{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: white;
   color: black;
   text-align: center;
   padding: 0 18%;
@@ -759,7 +766,9 @@ nav{
   position: relative;
 }
 
-
+.clicked{
+  display: flex;
+}
 
 .item1, .item2, .item3, .item4{
   position: relative;
@@ -921,6 +930,7 @@ nav{
   position: relative;
   z-index: 1;
   padding: 5% 20%;
+  background-color: white;
 }
 
 .packages-heading1 h1{
@@ -931,6 +941,7 @@ nav{
   font-family: "Playfair Display", serif;
   font-weight: 500;
   text-align: center;
+  background-color: white;
 }
 
 .packages-grid img{
