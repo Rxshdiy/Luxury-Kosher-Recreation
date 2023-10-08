@@ -69,6 +69,17 @@ closeButton.addEventListener('click', () => {
 
 );
 
+const menuClick2 = document.querySelector('.menu-icon-parent1');
+const menu2 = document.querySelector('.nav-links-phone');
+
+function addActive4() {
+  menu2.classList.toggle('clicked-menu');
+}
+
+menuClick2.addEventListener('click', () => {
+  addActive4();
+});
+
 
 
 

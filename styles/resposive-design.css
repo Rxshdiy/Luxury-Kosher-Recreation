@@ -1,0 +1,250 @@
+/* responsive design for max 1200px screen */
+.nav-phone{
+  display: none;
+}
+
+.menu-icon-parent1{
+  display: none;
+}
+
+.nav-links-phone{
+  display: none;
+}
+
+
+@media screen and (max-width: 1200px) {
+    body{
+      overflow-x: hidden;
+    }
+
+
+
+    
+
+    .nav-links-phone {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 100vw;
+      font-weight: 800;
+      position: absolute;
+      top: 8%;
+       z-index: 500;
+       background-color: white;
+    }
+
+    .clicked-menu{
+      display: flex;
+    }
+    
+
+    .nav-links a{
+      display: none;
+    }
+
+    .nav-links i{
+      display: none;
+    }
+
+    .nav-links button{
+      display: none;
+    }
+
+    .nav-links-phone a{
+      text-decoration: none;
+      color: black;
+      font-size: 0.9rem;
+      padding: 1rem;
+      transition: all 0.5s ease;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      width: 100%;
+      text-align: center;
+      font-weight: normal;
+    }
+
+
+    .nav-links{
+      justify-content: space-between;
+    }
+
+    .nav-links-phone a:hover{
+      color: #b38e2e;
+    }
+
+    .nav-phone{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      min-height: 8vh;
+      background-color: white;
+      position: sticky;
+      top: 0;
+      z-index: 500;
+    }
+
+    .logo img{
+      height: 40px;
+    }
+
+    .menu-line{
+      width: 20px;
+      height: 2px;
+    }
+
+    .background-first-section{
+      background-position: 26% !important;
+      height: 101vh;
+    }
+
+    .first-image-section{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      z-index: -1;
+    }
+
+    .first-section h1{
+      letter-spacing: 1px;
+      font-size: 1.5em;
+    }
+
+    .first-section{
+      height: 105vh;
+    }
+
+    .first-section button{
+      font-size: 1rem;
+      padding: 10px 10px;
+      box-sizing: initial;
+      width: 130px;
+      height: 30px;
+    }
+
+    .second-section{
+      padding: 60px 10px;
+      margin-top: 0;
+    }
+
+    .second-section-grid{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .second-section-grid-item1{
+      margin-bottom: 30px;
+    }
+
+    .second-section-grid-item-images{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .image-section{
+      padding: 40px 20px;
+    }
+
+    .first-image-section{
+      z-index: 0;
+      padding: 10px;
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+    .second-image-section{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .packages-grid{
+      padding: 10px 40px 40px 40px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .packages-heading1{
+      font-size: 0.6em;
+      margin: 30px 0;
+    }
+
+    .packages-grid img{
+      width: 50%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .bottom1 p, .bottom2 p, .bottom3 p, .bottom4 p, .bottom5 p, .bottom6 p, .bottom7 p, .bottom8 p, .bottom9 p{
+      font-size: 0.9em;
+      color: rgb(177, 177, 177);
+      text-align: center;
+      line-height: 1.6em;
+    }
+
+    .bottom1 h1, .bottom2 h1, .bottom3 h1, .bottom4 h1, .bottom5 h1, .bottom6 h1, .bottom7 h1, .bottom8 h1, .bottom9 h1{
+      font-size: 0.9em;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 30px;
+      font-weight: 500;
+      margin: 0% 0% 4% 0;
+      color: white;
+      padding: 0 10%;
+    }
+
+    .footer-grid-item1-grid{
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .footer-policies{
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      margin-top: 20px;
+      padding: 0 15px;
+      gap: 20px;
+      align-items: start;
+      height: 200px;
+    }
+
+    .footer-grid-item1{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer-grid-item1 p{
+      line-height: 2.2em;
+    }
+
+    .contact-footer p{
+      margin-bottom: 24px;
+      line-height: 1.8em;
+      margin-top: 5px;
+      padding-right: 10px;
+    }
+
+    .menu-icon-parent{
+      display: none;
+    }
+
+    .contact-footer{
+      border-right: 1px dotted #b38e2e;
+    }
+
+    .footer-grid{
+      height: 100%;
+    }
+
+    .menu-icon-parent1{
+      display: flex;
+     flex-direction: column;
+      cursor: pointer;
+      padding: 5px;
+    }
+
+
+
+
+  }    
